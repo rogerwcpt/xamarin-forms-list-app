@@ -16,4 +16,7 @@
     <Compile Remove="MainPage.xaml.cs" />
     <Compile Remove="ContactListPage.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="Resources\Avatar.png" />
+  </ItemGroup>
 </Project>

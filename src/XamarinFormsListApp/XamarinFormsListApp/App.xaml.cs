@@ -15,7 +15,7 @@ namespace XamarinFormsListApp {
         public Contact(string name, string email) {
             Name = name;
             Email = email;
-            Initial = name.Substring(0, 1);
+            Initial = "Avatar";
         }
 
         public string Name { get; }
@@ -28,6 +28,7 @@ namespace XamarinFormsListApp {
         public ContactCell() {
             this.SetBinding(TextProperty, "Name");
             this.SetBinding(DetailProperty, "Email");
+            this.SetBinding(ImageSourceProperty, "Initial");
         }
     }
 

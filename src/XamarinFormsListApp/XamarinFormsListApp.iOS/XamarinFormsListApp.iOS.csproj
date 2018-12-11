@@ -140,6 +140,8 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Avatar.imageset\Avatar.pdf" />
+    <ImageAsset Include="Assets.xcassets\Avatar.imageset\Contents.json" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -156,5 +158,8 @@
       <Project>{4967D417-4812-488F-94E6-0AF0CCA6409D}</Project>
       <Name>XamarinFormsListApp</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets.xcassets\Avatar.imageset\" />
   </ItemGroup>
 </Project>
