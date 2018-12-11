@@ -1,5 +1,6 @@
 ﻿using Xamarin.Forms;
 using System.Collections.Generic;
+using SkiaSharp.Views.Forms;
 
 namespace XamarinFormsListApp {
     public partial class App : Application {
@@ -23,11 +24,22 @@ namespace XamarinFormsListApp {
         public string Initial { get; }
     }
 
-    public class ContactCell: ImageCell {
+    public class ContactCell: ViewCell {
 
         public ContactCell() {
-            this.SetBinding(TextProperty, "Name");
-            this.SetBinding(DetailProperty, "Email");
+            var grid = new Grid();
+            var nameLabel = new Label();
+            var emailLabel = new Label();
+            var frame = new Frame();
+            var initialLabel = new Label();
+
+
+            nameLabel.SetBinding(Label.TextProperty, "Name");
+            emailLabel.SetBinding(Label.TextProperty, "Email");
+            grid.Children.Add(nameLabel);
+            grid.Children.Add(emailLabel);
+
+            View = grid;
         }
     }
 
