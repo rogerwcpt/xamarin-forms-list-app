@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -95,6 +95,7 @@
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ImageCellRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -140,6 +141,12 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Avatar.imageset\Avatar.pdf" />
+    <ImageAsset Include="Assets.xcassets\Avatar.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Avatar2.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Avatar2.imageset\IdCard1x.png" />
+    <ImageAsset Include="Assets.xcassets\Avatar2.imageset\IdCard2x.png" />
+    <ImageAsset Include="Assets.xcassets\Avatar2.imageset\IdCard3x.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -148,9 +155,9 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.1.0.697729" />
-    <PackageReference Include="SkiaSharp">
-      <Version>1.68.0</Version>
+    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
+    <PackageReference Include="Xamarin.Essentials">
+      <Version>1.0.0</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
@@ -159,5 +166,9 @@
       <Project>{4967D417-4812-488F-94E6-0AF0CCA6409D}</Project>
       <Name>XamarinFormsListApp</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets.xcassets\Avatar.imageset\" />
+    <Folder Include="Assets.xcassets\Avatar2.imageset\" />
   </ItemGroup>
 </Project>
